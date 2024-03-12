@@ -1,3 +1,10 @@
+
+const appSettings = {
+    databaseURL: "https://playground-e67a2-default-rtdb.firebaseio.com/"
+}
+
+
+
 const inputFieldEl = document.getElementById("input-field")
 const addButtonEl = document.getElementById("add-button")
 
