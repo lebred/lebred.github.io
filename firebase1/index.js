@@ -1,4 +1,4 @@
-import { add } from "../functions.js"
+import { add } from "./functions.js"
 
 console.log(add(1,1))
 
