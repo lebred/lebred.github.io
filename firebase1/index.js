@@ -14,5 +14,5 @@ const addButtonEl = document.getElementById("add-button")
 addButtonEl.addEventListener("click", function() {
     let inputValue = inputFieldEl.value
 
-    console.log(inputValue)
+    console.log(`${inputValue} added to database`)
 })
