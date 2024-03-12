@@ -1,6 +1,7 @@
 import { add } from "./functions.js"
 
-console.log(add(1,1))
+console.log(add(1,2))
+
 
 const appSettings = {
     databaseURL: "https://playground-e67a2-default-rtdb.firebaseio.com/"
