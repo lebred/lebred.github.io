@@ -1,3 +1,4 @@
+import { add }
 
 const appSettings = {
     databaseURL: "https://playground-e67a2-default-rtdb.firebaseio.com/"
