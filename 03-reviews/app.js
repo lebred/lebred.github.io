@@ -19,5 +19,5 @@ let currentItem = 0;
 // load initial item
 window.addEventListener('DOMContentLoaded', function() {
     const item = reviews[currentItem]
-    img.src = reviews[currentItem].img
+    img.src = item.img;
 });
