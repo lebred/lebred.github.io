@@ -57,5 +57,11 @@ function showPerson(person){
     author.textContent = item.name;
     job.textContent = item.job;
     info.textContent = item.text;
-
 }
+
+// show next person
+
+nextBtn.addEventListener('click', function() {
+    currentItem++;
+    showPerson(currentItem);
+})
