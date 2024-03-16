@@ -55,4 +55,6 @@ window.addEventListener('DOMContentLoaded', function() {
 
 // show person based on item
 
-function showPerson()
+function showPerson(person){
+    
+}
