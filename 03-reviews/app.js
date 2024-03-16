@@ -18,5 +18,5 @@ let currentItem = 0;
 
 // load initial item
 window.addEventListener('DOMContentLoaded', function() {
-    console.log("shake and bake");
+    const item = reviews[currentItem]
 });
