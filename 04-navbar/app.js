@@ -9,4 +9,5 @@ const links = document.querySelector(".links");
 
 navToggle.addEventListener('click', function(){
     console.log(links.classList.contains('random'));
+    console.log(links.classList.contains('links'));
 })
