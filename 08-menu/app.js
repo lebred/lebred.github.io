@@ -90,6 +90,14 @@ window.addEventListener('DOMContentLoaded', function(){
 filterBtns.forEach(function(btn){
   btn.addEventListener('click', function(e){
     const category = e.currentTarget.dataset.id;
+    const menuCategory = menu.filter(function(menuItem){
+      //console.log(menuItem.category);
+      if(menuItem.category === category){
+              return menuItem;
+
+      }
+    })
+    console.log(menuCategory);
   })
 })
 
