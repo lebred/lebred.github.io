@@ -107,7 +107,7 @@ filterBtns.forEach(function(btn){
 });
 
 function displayMenuItems(menuItems){
-  let displayMenu = menu.map(function(item){
+  let displayMenu = menuItems.map(function(item){
       // console.log(item);
 
       return `<article class="menu-item">
