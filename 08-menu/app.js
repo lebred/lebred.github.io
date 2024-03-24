@@ -94,7 +94,7 @@ window.addEventListener('DOMContentLoaded', function(){
 
   const categories = menu.reduce(function(values, item){
     if(!values.includes(item.category)){
-      values.push(item.category)
+      values.push(item.category);
     }
     return values;
   },['all'])
