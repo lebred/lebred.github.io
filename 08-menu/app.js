@@ -102,9 +102,9 @@ filterBtns.forEach(function(btn){
     }
     else{
       displayMenuItems(menuCategory);
-    }
-  })
-})
+    };
+  });
+});
 
 function displayMenuItems(menuItems){
   let displayMenu = menu.map(function(item){
