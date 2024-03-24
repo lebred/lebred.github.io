@@ -81,11 +81,11 @@ window.addEventListener('DOMContentLoaded', function(){
     // console.log(item);
 
     return `<article class="menu-item">
-        <img src="menu-item.jpeg" class="photo" alt="menu item">
+        <img src="${item.img}" class="photo" alt="${item.title}">
         <div class="item-info">
           <header>
-            <h4>buttermilk pancakes</h4>
-            <h4 class="price">$15</h4>
+            <h4>${item.title}</h4>
+            <h4 class="$${item.price}">$15</h4>
           </header>
           <p class="item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, reprehenderit impedit non
             totam consectetur
