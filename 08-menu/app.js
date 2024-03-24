@@ -93,9 +93,7 @@ const container = document.querySelector('.btn-container');
 
 window.addEventListener('DOMContentLoaded', function(){
   displayMenuItems(menu);
-
-
-
+  displayMenuButtons();
 
 });
 
