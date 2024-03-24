@@ -95,3 +95,7 @@ window.addEventListener('DOMContentLoaded', function(){
   sectionCenter.innerHTML = displayMenu;
   // console.log(displayMenu);
 });
+
+function displayMenuItems(menuItems){
+  
+}
