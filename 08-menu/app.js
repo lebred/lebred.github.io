@@ -98,7 +98,9 @@ window.addEventListener('DOMContentLoaded', function(){
     }
     return values;
   },['all'])
-  console.log(categories);
+  const categoryBtns = categories.map(function(category){
+    
+  })
 });
 
 
