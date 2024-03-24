@@ -97,7 +97,7 @@ filterBtns.forEach(function(btn){
       }
     })
     //console.log(menuCategory);
-    if(category === 'all'){
+    if(category === "all"){
       displayMenuItems(menu);
     }
     else{
