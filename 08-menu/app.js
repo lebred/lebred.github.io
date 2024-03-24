@@ -86,7 +86,7 @@ const sectionCenter = document.querySelector('.section-center');
 
 const container = document.querySelector('.btn-container');
 
-const filterBtns = document.querySelectorAll('.filter-btn');
+
 
 // load items
 
@@ -103,6 +103,9 @@ window.addEventListener('DOMContentLoaded', function(){
   const categoryBtns = categories.map(function(category){
     return `<button class="filter-btn" type="button" data-id="${category}">${category}</button>`
   }).join('');
+  container.innerHTML = categoryBtns;
+  const filterBtns = document.querySelectorAll('.filter-btn');
+
 });
 
 
