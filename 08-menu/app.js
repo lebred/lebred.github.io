@@ -94,10 +94,15 @@ filterBtns.forEach(function(btn){
       //console.log(menuItem.category);
       if(menuItem.category === category){
               return menuItem;
-
       }
     })
-    console.log(menuCategory);
+    //console.log(menuCategory);
+    if(category === 'all'){
+      displayMenuItems(menu);
+    }
+    else{
+      displayMenuItems(menuCategory);
+    }
   })
 })
 
