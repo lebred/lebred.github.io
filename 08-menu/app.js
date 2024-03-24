@@ -105,14 +105,7 @@ window.addEventListener('DOMContentLoaded', function(){
   }).join('');
   container.innerHTML = categoryBtns;
   const filterBtns = document.querySelectorAll('.filter-btn');
-
-});
-
-
-
-// filter items
-
-filterBtns.forEach(function(btn){
+  filterBtns.forEach(function(btn){
   btn.addEventListener('click', function(e){
     const category = e.currentTarget.dataset.id;
     const menuCategory = menu.filter(function(menuItem){
@@ -130,6 +123,14 @@ filterBtns.forEach(function(btn){
     };
   });
 });
+
+
+});
+
+
+
+// filter items
+
 
 function displayMenuItems(menuItems){
   let displayMenu = menuItems.map(function(item){
