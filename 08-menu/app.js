@@ -126,7 +126,6 @@ function displayMenuItems(menuItems){
 }
 
 function displayMenuButtons(){
-
     const categories = menu.reduce(function(values, item){
     if(!values.includes(item.category)){
       values.push(item.category);
@@ -156,5 +155,5 @@ function displayMenuButtons(){
     };
   });
 });
-
+  
 }
