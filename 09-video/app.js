@@ -15,3 +15,11 @@ btn.addEventListener('click', function(){
         video.play();
     }
 })
+
+// preloader
+
+const preloader = document.querySelector('.preloader');
+
+window.addEventListener('load', function(){
+    
+})
