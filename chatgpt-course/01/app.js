@@ -1,8 +1,10 @@
+const API_KEY = "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"
+
 async function fetchData(){
     const response = await fetch("https://api.openai.com/v1/completions", {
         method: "POST",
         headers: {
-            Authorization: `Bearer ${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}`,
+            Authorization: `Bearer ${API_KEY}`,
             "Content-type": "application/json"
         },
         body: JSON.stringify({
