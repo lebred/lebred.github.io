@@ -8,7 +8,7 @@ async function fetchData(){
             "Content-type": "application/json"
         },
         body: JSON.stringify({
-            model: "text-davinci-003",
+            model: "gpt-3.5-turbo-instruct",
             prompt: "hello, how are you today?",
             max_token: 7
         })
