@@ -10,4 +10,4 @@ app.get("/test", async (req: Request, res: Response)=>{
     res.json({ message: "Hello!"});
 });
 
-app.listen()
+app.listen(7000)
