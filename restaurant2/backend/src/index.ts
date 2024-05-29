@@ -9,3 +9,5 @@ app.use(cors())
 app.get("/test", async (req: Request, res: Response)=>{
     res.json({ message: "Hello!"});
 });
+
+app.listen()
