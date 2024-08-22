@@ -1,9 +1,9 @@
-from app import app
-from flask import render_template, request, redirect, url_for  # type: ignore
+from flask import Flask, render_template, request, redirect, url_for  # type: ignore
 from PIL import Image  # type: ignore
 import pytesseract  # type: ignore
 import os
 
+app = Flask(__name__)
 app.config["UPLOAD_FOLDER"] = "static/uploads"
 
 if not os.path.exists(app.config["UPLOAD_FOLDER"]):
