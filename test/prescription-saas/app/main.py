@@ -3,6 +3,9 @@ from PIL import Image  # type: ignore
 import pytesseract  # type: ignore
 import os
 
+print("Current Working Directory:", os.getcwd())
+
+
 app = Flask(__name__)
 app.config["UPLOAD_FOLDER"] = "static/uploads"
 
