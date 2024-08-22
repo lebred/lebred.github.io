@@ -1,4 +1,5 @@
-Flask==2.1.1
-Tesseract==0.3.0
+Flask==2.0.3
+pytesseract
 Pillow==9.1.0
 requests==2.27.1
+Werkzeug==2.0.3
