@@ -8,8 +8,15 @@
 </head>
 
 <body>
-    <h1>Welcome to the Prescription SaaS!</h1>
-    <p>This is the home page of your application.</p>
+    <h1>Upload Prescription</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="prescription_image" accept="image/*" required>
+        <button type="submit">Upload</button>
+    </form>
+    {% if text %}
+    <h2>Extracted Text</h2>
+    <p>{{ text }}</p>
+    {% endif %}
 </body>
 
 </html>
