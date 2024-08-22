@@ -1,7 +1,7 @@
 import os
-from flask import Flask, render_template, request, redirect, url_for
-from PIL import Image
-import pytesseract
+from flask import Flask, render_template, request, redirect, url_for  # type: ignore
+from PIL import Image  # type: ignore
+import pytesseract  # type: ignore
 
 app = Flask(__name__)
 app.config["UPLOAD_FOLDER"] = "static/uploads"
