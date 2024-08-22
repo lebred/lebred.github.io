@@ -1,13 +1,22 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Test</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prescription SaaS</title>
 </head>
 
 <body>
-    <h1>Hello, World!</h1>
+    <h1>Upload Prescription</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="prescription_image" accept="image/*" required>
+        <button type="submit">Upload</button>
+    </form>
+    {% if text %}
+    <h2>Extracted Text</h2>
+    <p>{{ text }}</p>
+    {% endif %}
 </body>
 
 </html>

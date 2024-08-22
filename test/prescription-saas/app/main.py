@@ -1,12 +1,9 @@
-from flask import Flask, render_template, request, redirect, url_for  # type: ignore
-from PIL import Image  # type: ignore
-import pytesseract  # type: ignore
 import os
+from flask import Flask, render_template, request, redirect, url_for
+from PIL import Image
+import pytesseract
 
-print("Current Working Directory:", os.getcwd())
-
-
-app = Flask(__name__)
+app = Flask(__name__, template_folder="templates")
 app.config["UPLOAD_FOLDER"] = "static/uploads"
 
 if not os.path.exists(app.config["UPLOAD_FOLDER"]):
@@ -15,6 +12,8 @@ if not os.path.exists(app.config["UPLOAD_FOLDER"]):
 
 @app.route("/")
 def home():
+    print("Current Working Directory:", os.getcwd())
+    print("Templates Directory:", os.path.join(os.getcwd(), "templates"))
     return render_template("index.html")
 
 
